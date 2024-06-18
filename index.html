@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <p class="count"></p>
+        <input type="text" class="display" placeholder="Ввидите">
+        <div class="container-button">
+            <span>
+                <button class="operator">sin</button>
+                <button class="operator">cos</button><br>
+                <button class="operator">tan</button>
+                <button class="operator">π</button><br>
+                <button class="operator">!</button>
+                <button class="operator">ln</button><br>
+                <button class="operator">log</button>
+                <button class="operator">e</button><br>
+                <button class="operator">^</button>
+                <button class="operator">√</button>
+            </span>
+            <span>
+                <button class="num">7</button>
+                <button class="num">8</button>
+                <button class="num">9</button><br>
+                <button class="num">4</button>
+                <button class="num">5</button>
+                <button class="num">6</button><br>
+                <button class="num">1</button>
+                <button class="num">2</button>
+                <button class="num">3</button><br>
+                <button class="num">0</button>
+                <button class="num">.</button>
+                <button class="num">DEL</button><br>
+                <button class="num clear">C</button>
+            </span>
+            <span>
+                <button class="operator">/</button>
+                <button class="operator">(</button><br>
+                <button class="operator">x</button>
+                <button class="operator">)</button><br>
+                <button class="operator">-</button>
+                <button class="operator">+</button><br>
+                <button class="operator equal">=</button>
+            </span>
+        </div>
+    </div>
+    <button class="info-floating">i</button>
+    <!-- Модальное окно для информации -->
+    <div id="infoModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Управление</h2>
+            <ul>
+                <li>DEL - Удалить последний введенный символ.</li>
+                <li>C - Очистить все введенное до сих пор.</li>
+                <li>+ - Добавить. Нажмите эту кнопку, чтобы сложить два числа.</li>
+                <li>- - Вычесть. Нажмите эту кнопку, чтобы вычесть одно число из другого.</li>
+                <li>/ - Разделить. Нажмите эту кнопку, чтобы разделить одно число на другое.</li>
+                <li>* - Умножить. Нажмите эту кнопку, чтобы умножить два числа.</li>
+                <li>( - Открыть скобку. Нажмите эту кнопку для начала группировки выражений.</li>
+                <li>) - Закрыть скобку. Нажмите эту кнопку для завершения группировки выражений.</li>
+                <li>= - Равно. Нажмите эту кнопку, чтобы вычислить результат выражения.</li>
+                <li>sin - Вычислить синус угла. Введите угол в радианах и нажмите эту кнопку.</li>
+                <li>cos - Вычислить косинус угла. Введите угол в радианах и нажмите эту кнопку.</li>
+                <li>tg - Вычислить тангенс угла. Введите угол в радианах и нажмите эту кнопку.</li>
+                <li>ln - Вычислить натуральный логарифм числа. Введите число и нажмите эту кнопку.</li>
+                <li>e - Вставить число Эйлера (примерно равное 2.718) в текущую позицию курсора.</li>
+                <li>log - Вычислить десятичный логарифм числа. Введите число и нажмите эту кнопку.</li>
+                <li>^ - Возвести число в степень. Введите основание, нажмите эту кнопку и введите показатель степени.</li>
+                <li>π- Вставить число Пи (примерно равное 3.14159) в текущую позицию курсора.</li>
+                <li>! - Вычислить факториал числа. Введите неотрицательное целое число и нажмите эту кнопку.</li>
+                <li>√ - Извлечь квадратный корень из числа. Введите число и нажмите эту кнопку.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="info-floating.js"></script>
+    <script src="number.js"></script>
+</body>
+</html>
